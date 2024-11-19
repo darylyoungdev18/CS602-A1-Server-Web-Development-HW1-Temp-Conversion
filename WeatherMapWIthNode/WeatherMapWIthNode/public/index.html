@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header-area">
+            <h1>
+                Welcome to the Weather App!
+            </h1>
+            <div class="intro-instructions">
+                <h2>
+                    please fill out the fields below to check the current weather in a specific location.
+                </h2>
+
+            </div>
+        </div>
+        <div class="weather-form-area">
+            <div class="weather-form-container">
+                <form id="weatherForm" method="post">
+                    <!--remember name attribute require to pass info to the backend on forms-->
+
+                    <input type="text" id="zip" name="zip" placeholder="Zip Code">
+                    <input type="text" id="countryCode" name='countryCode' placeholder="Country Code">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        <div class="results-area">
+            <h3>Weather Results:</h3>
+            <div id="results"></div> 
+        </div>
+    </div>
+    <script src="/js/weather.js"></script>
+</body>
+</html>

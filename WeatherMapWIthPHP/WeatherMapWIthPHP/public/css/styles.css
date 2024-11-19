@@ -1,0 +1,87 @@
+body {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('images/default.jpg');
+    font-family: Arial, sans-serif;
+    color: white; 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: background-image 1s ease-in-out;
+}
+
+body.fade-in {
+    background-image: url('images/some-image.jpg');
+}
+
+
+h1, h2, p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#weatherForm{
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#weatherForm input{
+    padding:0.5rem;
+    margin:1rem auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+
+#results {
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+#results.fade-in {
+    opacity: 1; 
+}
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #results {
+        width: 90%;
+    }
+}
